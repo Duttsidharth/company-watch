@@ -1,1 +1,64 @@
+name: Update company research
+on:
+  schedule:
+    - cron: '30 3 * * *' # 09:00 IST; GitHub may delay scheduled runs.
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: company-watch
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Restore last successful public research cache
+        uses: actions/cache/restore@v4
+        with:
+          path: research.json
+          key: research-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: research-
+      - name: Test privacy and failure handling
+        run: python3 -m unittest discover -s tests -v
+      - name: Fetch announcements and news
+        run: python3 fetch_updates.py
+      - name: Bundle research page
+        run: python3 build_site.py
+      - name: Encrypt publication
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+        run: node encrypt.cjs
+      - name: Test browser-compatible decryption
+        run: node tests/crypto.cjs
+        env:
+          SITE_PASSWORD: ${{ secrets.SITE_PASSWORD }}
+      - name: Save public research cache
+        uses: actions/cache/save@v4
+        with:
+          path: research.json
+          key: research-${{ github.run_id }}-${{ github.run_attempt }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish encrypted page
+        id: deployment
+        uses: actions/deploy-pages@v4
 
