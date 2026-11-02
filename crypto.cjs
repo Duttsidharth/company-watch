@@ -1,0 +1,6 @@
+const fs=require('node:fs'),assert=require('node:assert/strict'),{webcrypto}=require('node:crypto');
+(async()=>{const html=fs.readFileSync('dist/index.html','utf8');
+const values={};for(const name of ['SALT','IV','CT'])values[name]=Buffer.from(html.match(new RegExp(name+' = "([^"]+)"'))[1],'base64');
+const iterations=Number(html.match(/ITER = (\d+)/)[1]);
+async function decrypt(password,ct=values.CT){const km=await webcrypto.subtle.importKey('raw',new TextEncoder().encode(password),'PBKDF2',false,['deriveBits']);const bits=await webcrypto.subtle.deriveBits({name:'PBKDF2',hash:'SHA-256',salt:values.SALT,iterations},km,256);const key=await webcrypto.subtle.importKey('raw',bits,'AES-GCM',false,['decrypt']);return Buffer.from(await webcrypto.subtle.decrypt({name:'AES-GCM',iv:values.IV,tagLength:128},key,ct))}
+assert.deepEqual(await decrypt(process.env.SITE_PASSWORD),fs.readFileSync('site.html'));await assert.rejects(decrypt('deliberately wrong password'));const bad=Buffer.from(values.CT);bad[0]^=1;await assert.rejects(decrypt(process.env.SITE_PASSWORD,bad));assert(!html.includes('window.TRACKER_DATA'));assert(!html.includes(process.env.SITE_PASSWORD));console.log('PASS: WebCrypto decryption, wrong-password rejection, tamper detection, password absent from artifact.');})();

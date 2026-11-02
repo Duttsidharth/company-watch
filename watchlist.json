@@ -1,0 +1,426 @@
+{
+  "companies": [
+    {
+      "symbol": "HSCL",
+      "name": "Himadri Speciality Chemical",
+      "isin": "INE019C01026",
+      "yahoo": "HSCL.BO",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divis Laboratories",
+      "isin": "INE361B01024",
+      "yahoo": "DIVISLAB.NS",
+      "sector": "Healthcare"
+    },
+    {
+      "symbol": "TANLA",
+      "name": "Tanla Platforms",
+      "isin": "INE483C01032",
+      "yahoo": "TANLA.BO",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "ACUTAAS",
+      "name": "Acutaas Chemicals",
+      "isin": "INE00FF01025",
+      "yahoo": "ACUTAAS.NS",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "GANECOS",
+      "name": "Ganesha Ecosphere",
+      "isin": "INE845D01014",
+      "yahoo": "GANECOS.BO",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "BSE",
+      "name": "BSE",
+      "isin": "INE118H01025",
+      "yahoo": "BSE.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "ACE",
+      "name": "Action Construction Equipment",
+      "isin": "INE731H01025",
+      "yahoo": "ACE.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "APLAPOLLO",
+      "name": "APL Apollo Tubes",
+      "isin": "INE702C01027",
+      "yahoo": "APLAPOLLO.BO",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance",
+      "isin": "INE296A01032",
+      "yahoo": "BAJFINANCE.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "BLACKBOX",
+      "name": "Black Box",
+      "isin": "INE676A01027",
+      "yahoo": "BBOX.BO",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "CARYSIL",
+      "name": "Carysil",
+      "isin": "INE482D01024",
+      "yahoo": "CARYSIL.BO",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "HINDCOPPER",
+      "name": "Hindustan Copper",
+      "isin": "INE531E01026",
+      "yahoo": "HINDCOPPER.BO",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "LT",
+      "name": "Larsen & Toubro",
+      "isin": "INE018A01030",
+      "yahoo": "LT.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "OPTIEMUS",
+      "name": "Optiemus Infracom",
+      "isin": "INE350C01017",
+      "yahoo": "OPTIEMUS.BO",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "MCX",
+      "name": "Multi Commodity Exchange",
+      "isin": "INE745G01043",
+      "yahoo": "MCX.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank",
+      "isin": "INE040A01034",
+      "yahoo": "HDFCBANK.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "CDSL",
+      "name": "Central Depository Services",
+      "isin": "INE736A01011",
+      "yahoo": "CDSL.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "MAHABANK",
+      "name": "Bank of Maharashtra",
+      "isin": "INE457A01014",
+      "yahoo": "MAHABANK.BO",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "FSL",
+      "name": "Firstsource Solutions",
+      "isin": "INE684F01012",
+      "yahoo": "FSL.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "RELIANCE",
+      "name": "Reliance Industries",
+      "isin": "INE002A01018",
+      "yahoo": "RELIANCE.NS",
+      "sector": "Energy"
+    },
+    {
+      "symbol": "WAAREEENER",
+      "name": "Waaree Energies",
+      "isin": "INE377N01017",
+      "yahoo": "WAAREEENER.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "CONCORDBIO",
+      "name": "Concord Biotech",
+      "isin": "INE338H01029",
+      "yahoo": "CONCORDBIO.NS",
+      "sector": "Healthcare"
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power and Industrial Solutions",
+      "isin": "INE067A01029",
+      "yahoo": "CGPOWER.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "HBLENGINE",
+      "name": "HBL Engineering",
+      "isin": "INE292B01021",
+      "yahoo": "HBLENGINE.BO",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "ATHERENERG",
+      "name": "Ather Energy",
+      "isin": "INE0LEZ01016",
+      "yahoo": "ATHERENERG.NS",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "name": "IDFC FIRST Bank",
+      "isin": "INE092T01019",
+      "yahoo": "IDFCFIRSTB.BO",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "name": "Bajaj Auto",
+      "isin": "INE917I01010",
+      "yahoo": "BAJAJ-AUTO.NS",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "AVALON",
+      "name": "Avalon Technologies",
+      "isin": "INE0LCL01028",
+      "yahoo": "AVALON.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "KFINTECH",
+      "name": "KFin Technologies",
+      "isin": "INE138Y01010",
+      "yahoo": "KFINTECH.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "Tata Consumer Products",
+      "isin": "INE192A01025",
+      "yahoo": "TATACONSUM.NS",
+      "sector": "Consumer Defensive"
+    },
+    {
+      "symbol": "POLYMED",
+      "name": "Poly Medicure",
+      "isin": "INE205C01021",
+      "yahoo": "POLYMED.BO",
+      "sector": "Healthcare"
+    },
+    {
+      "symbol": "INFY",
+      "name": "Infosys",
+      "isin": "INE009A01021",
+      "yahoo": "INFY.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "SUZLON",
+      "name": "Suzlon Energy",
+      "isin": "INE040H01021",
+      "yahoo": "SUZLON.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "SANSERA",
+      "name": "Sansera Engineering",
+      "isin": "INE953O01021",
+      "yahoo": "SANSERA.NS",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Energy India",
+      "isin": "INE1NPP01017",
+      "yahoo": "ENRIN.NS",
+      "sector": "Utilities"
+    },
+    {
+      "symbol": "SYRMA",
+      "name": "Syrma SGS Technology",
+      "isin": "INE0DYJ01015",
+      "yahoo": "SYRMA.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "SHADOWFAX",
+      "name": "Shadowfax Technologies",
+      "isin": "INE12UN01015",
+      "yahoo": "SHADOWFAX.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "CAMS",
+      "name": "Computer Age Management Services",
+      "isin": "INE596I01020",
+      "yahoo": "CAMS.BO",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "BEL",
+      "name": "Bharat Electronics",
+      "isin": "INE263A01024",
+      "yahoo": "BEL.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "NEOGEN",
+      "name": "Neogen Chemicals",
+      "isin": "INE136S01016",
+      "yahoo": "NEOGEN.NS",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "SBCL",
+      "name": "Shivalik Bimetal Controls",
+      "isin": "INE386D01027",
+      "yahoo": "SBCL.BO",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "JIOFIN",
+      "name": "Jio Financial Services",
+      "isin": "INE758E01017",
+      "yahoo": "JIOFIN.NS",
+      "sector": "Financial Services"
+    },
+    {
+      "symbol": "ABREL",
+      "name": "Aditya Birla Real Estate",
+      "isin": "INE055A01016",
+      "yahoo": "ABREL.BO",
+      "sector": "Real Estate"
+    },
+    {
+      "symbol": "AJAXENGG",
+      "name": "Ajax Engineering",
+      "isin": "INE274Y01021",
+      "yahoo": "AJAXENGG.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "EBGNG",
+      "name": "GNG Electronics",
+      "isin": "INE18JU01028",
+      "yahoo": "EBGNG.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "INDHOTEL",
+      "name": "Indian Hotels",
+      "isin": "INE053A01029",
+      "yahoo": "INDHOTEL.NS",
+      "sector": "Consumer Cyclical"
+    },
+    {
+      "symbol": "ICEMAKE",
+      "name": "ICE Make Refrigeration",
+      "isin": "INE520Y01019",
+      "yahoo": "ICEMAKE.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "TDPOWERSYS",
+      "name": "TD Power Systems",
+      "isin": "INE419M01035",
+      "yahoo": "TDPOWERSYS.BO",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "ALKYLAMINE",
+      "name": "Alkyl Amines",
+      "isin": "INE150B01039",
+      "yahoo": "ALKYLAMINE.NS",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "QPOWER",
+      "name": "Quality Power Electrical Equipments",
+      "isin": "INE0SII01026",
+      "yahoo": "QPOWER.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "JPL",
+      "name": "Jio Platforms",
+      "isin": "INE0BJO01010",
+      "yahoo": "JPL.NS",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "AIAENG",
+      "name": "AIA Engineering",
+      "isin": "INE212H01026",
+      "yahoo": "AIAENG.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "INOXINDIA",
+      "name": "INOX India",
+      "isin": "INE616N01034",
+      "yahoo": "INOXINDIA.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "BORORENEW",
+      "name": "Borosil Renewables",
+      "isin": "INE666D01022",
+      "yahoo": "BORORENEW.BO",
+      "sector": "Technology"
+    },
+    {
+      "symbol": "JASH",
+      "name": "Jash Engineering",
+      "isin": "INE039O01029",
+      "yahoo": "JASH.NS",
+      "sector": "Industrials"
+    },
+    {
+      "symbol": "POCL",
+      "name": "Pondy Oxides and Chemicals",
+      "isin": "INE063E01061",
+      "yahoo": "POCL.BO",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "VEDL",
+      "name": "Vedanta",
+      "isin": "INE205A01025",
+      "yahoo": "VEDL.BO",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "VAML",
+      "name": "Vedanta Aluminium Metal",
+      "isin": "INE1CDF01017",
+      "yahoo": "VAML.NS",
+      "sector": "Basic Materials"
+    },
+    {
+      "symbol": "SKIPPER",
+      "name": "Skipper",
+      "isin": "INE439E01022",
+      "yahoo": "SKIPPER.BO",
+      "sector": "Industrials"
+    }
+  ],
+  "policy_queries": [
+    "SEBI regulation stock market",
+    "RBI policy interest rate India",
+    "India budget taxation stock market",
+    "India trade tariff customs duty industry",
+    "India infrastructure capex policy",
+    "India renewable energy solar policy",
+    "India electronics manufacturing semiconductor policy"
+  ]
+}

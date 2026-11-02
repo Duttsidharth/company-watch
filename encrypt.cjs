@@ -1,0 +1,12 @@
+const fs=require('node:fs'),crypto=require('node:crypto');
+const password=process.env.SITE_PASSWORD;
+if(!password||password.length<16)throw Error('SITE_PASSWORD must contain at least 16 characters.');
+const salt=crypto.randomBytes(16),iv=crypto.randomBytes(12),iterations=600000;
+const key=crypto.pbkdf2Sync(password,salt,iterations,32,'sha256');
+const cipher=crypto.createCipheriv('aes-256-gcm',key,iv);
+const plaintext=fs.readFileSync('site.html');
+const ct=Buffer.concat([cipher.update(plaintext),cipher.final(),cipher.getAuthTag()]);
+let page=fs.readFileSync('password_template.html','utf8');
+for(const [k,v] of Object.entries({SALT:salt.toString('base64'),IV:iv.toString('base64'),CT:ct.toString('base64'),ITER:String(iterations)}))page=page.replaceAll('__'+k+'__',v);
+fs.mkdirSync('dist',{recursive:true});fs.writeFileSync('dist/index.html',page);
+console.log('Encrypted page generated; password is never stored.');
